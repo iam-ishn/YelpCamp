@@ -14,7 +14,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStratergy = require("passport-local");
 const helmet = require("helmet");
-const dbUrl = "mongodb://127.0.0.1:27017/yelp-camp";
+const dbUrl = process.env.DB_URL;
 const { MongoStore } = require("connect-mongo");
 
 const campgroundRoutes = require("./routes/campground.js");
