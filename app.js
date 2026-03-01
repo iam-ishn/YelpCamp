@@ -156,6 +156,8 @@ app.use((err, req, res, next) => {
   if (!err.message) err.message = "Ohh Boy!! Something went Wrong";
   res.status(statusCode).render("error", { err });
 });
-app.listen(3000, () => {
-  console.log("Serving on port 3000");
-});
+// app.listen(3000, () => {
+//   console.log("Serving on port 3000");
+// });
+
+module.exports = app;
